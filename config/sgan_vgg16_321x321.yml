@@ -1,0 +1,46 @@
+# global
+cfg_name: "sgan_vgg16_321x321_snet"
+
+# dataset
+dataset_name: "voc12_sgan"
+dataset_root: "/data/yaoqi/Dataset/VOCdevkit/VOC2012/"
+gt_path: "SegmentationClassAug/"
+sal_subdir: "sal_snet"
+sal_thresh: 0.06
+seed_subdir: "base_30_bg"
+
+sdnet_path: "sal_snet"
+cue_file: "im_tags.pkl"
+
+batch_size: 15
+num_worker: 8
+resize: 321
+use_sal: True
+
+mean: [104.008, 116.669, 122.675]
+std:
+
+# network
+backbone: "vgg16"
+pretrain: "vgg_init.pth"
+
+# optimization
+max_iter: 8000
+step_size: 2000
+display_step: 50
+lr: 0.001
+power: 0.9
+weight_decay: 0.0005
+seed_loss_ratio: 0.15
+save_model_path: "model/"
+
+# test
+test_cfg: "_seedcam_0.25"
+new_size: 321
+res_path: "result"
+cam_thresh: 0.25
+ignore_conflict: False
+combine_seedseg: True
+
+# eval
+num_classes: 22
