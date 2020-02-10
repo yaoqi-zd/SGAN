@@ -47,11 +47,14 @@ SGAN is released under the MIT license
 ## Citing SGAN
 if you find SGAN useful in your research, please consider citing:
 ```txt
-@article{yao2019saliency,
-  title={Saliency Guided Self-attention Network for Weakly-supervised Semantic Segmentation},
+@article{yao2020saliency,
+  title={Saliency Guided Self-Attention Network for Weakly and Semi-Supervised Semantic Segmentation},
   author={Yao, Qi and Gong, Xiaojin},
-  journal={arXiv preprint arXiv:1910.05475},
-  year={2019}
+  journal={IEEE Access},
+  volume={8},
+  pages={14413--14423},
+  year={2020},
+  publisher={IEEE}
 }
 ```
 
