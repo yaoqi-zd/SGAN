@@ -7,7 +7,7 @@ The proposed approach consists of three components: (1) a CNN backbone to learn 
 
 ## Installation
 ### 1. Prerequisites
-Tested on Ubuntu16.04, CUDA9.0, python3.5, Pytorch 0.4.1, NVIDIA RTX 2080TI
+Tested on Ubuntu16.04, CUDA9.0, python3.5, Pytorch 0.4.1, [CRF](https://github.com/kolesman/SEC), NVIDIA RTX 2080TI
 
 ### 2. Dataset
 1. Download the prepared [VOC2012 dataset](https://drive.google.com/open?id=1PDTEuTnWJZNWogxYdqYGOlEZHK8dYET9), it contains all the files to reproduce the paper's results, including training images, pre-computed saliency maps and initial seeds.
