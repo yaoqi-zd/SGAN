@@ -1,0 +1,17 @@
+train_net: "config/deeplabv2_weakly.prototxt"
+random_seed: 0
+
+lr_policy: "step"
+gamma: 0.33
+stepsize: 2000
+base_lr: 1e-3
+
+display: 50
+average_loss: 50
+max_iter: 8000
+momentum: 0.9
+weight_decay: 0.0005
+
+snapshot: 2000
+snapshot_prefix: "model/seed_sgan/model"
+solver_mode: GPU

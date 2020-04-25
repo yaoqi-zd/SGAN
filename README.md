@@ -39,7 +39,11 @@ If you have finished all the steps above, you will get the seeds with precision=
 The pre-computed seeds can be downloaded [here](https://drive.google.com/open?id=10AU1YOsC8un99AeszM9UHbth3agV3IT5).
 
 ## Segmentation Result
-If you want to reproduce our segmentation results, please refer [DSRG](https://github.com/speedinghzl/DSRG) to train segmentation network with the generated seeds. We provide the training prototxt [here](https://drive.google.com/open?id=1JTwg5GmcCmTd6FDCeLkCo8ZQ7P7PPmB-) for reference.
+If you want to reproduce our segmentation results, please refer [DSRG](https://github.com/speedinghzl/DSRG) for experiment setup, you may need to compile caffe, setup caffe python path and some other path variables. We provide the dsrg code, caffe with modified data layer in `dsrg` folder. In `experiment/anti_noise` folder, run
+```
+./run_anti_noise.sh [gpu_id]
+```
+Note that the our modified dsrg code is a little dirty and I don't have time to clean up. However, it's enough to reproduce the segmentation performance.
 
 ## License
 SGAN is released under the MIT license
@@ -69,5 +73,12 @@ if you also use the SNet to generate saliency maps, please consider citing:
   pages={3239--3251},
   year={2018},
   publisher={IEEE}
+}
+@inproceedings{huang2018dsrg,
+    title={Weakly-Supervised Semantic Segmentation Network with Deep Seeded Region Growing},
+    author={Huang, Zilong and Wang, Xinggang and Wang, Jiasi and Liu, Wenyu and Wang, Jingdong},
+    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+    pages={7014--7023},
+    year={2018}
 }
 ```

@@ -1,0 +1,9 @@
+/data/yaoqi/segmentation/caffe/python/
+Traceback (most recent call last):
+  File "../../tools/train_anti_noise.py", line 12, in <module>
+    import caffe
+  File "/data/yaoqi/segmentation/caffe/python/caffe/__init__.py", line 1, in <module>
+    from .pycaffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, RMSPropSolver, AdaDeltaSolver, AdamSolver
+  File "/data/yaoqi/segmentation/caffe/python/caffe/pycaffe.py", line 13, in <module>
+    from ._caffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, \
+ImportError: libcudart.so.8.0: cannot open shared object file: No such file or directory
