@@ -1,6 +1,9 @@
 # Saliency Guided Self-attention Network for Weakly and Semi-supervised Semantic Segmentation (IEEE ACCESS)
 This code is a implementation of the high-quality seed generation step in the paper [SGAN](https://arxiv.org/abs/1910.05475). The code is developed based on the Pytorch framework.
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/saliency-guided-self-attention-network-for/weakly-supervised-semantic-segmentation-on)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on?p=saliency-guided-self-attention-network-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/saliency-guided-self-attention-network-for/weakly-supervised-semantic-segmentation-on-1)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-1?p=saliency-guided-self-attention-network-for)
+
 ## Introduction
 ![Overview of SGAN](./images/graphical_abstract.png)
 The proposed approach consists of three components: (1) a CNN backbone to learn deep feature representations; (2) a saliency guided self-attention module that propagates attentions from small discriminative parts to non-discriminative regions; (3) an image classification branch and a seed segmentation branch to supervise the training of the entire network.
